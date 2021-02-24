@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>YATRA KARLO.com</title>
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <script type="text/javascript" src="jquery_min.js"></script>
+    <script type="text/javascript" src="form_vald.js"></script>
+</head>
+<body style="background-color: floralwhite;">
+    <header  class="page-header" style="background: green;">
+    <div><img src="travel logo.jpg" style="height: 77px;"><h1 style="text-align: center;margin-top: -60px;">YATRA KARLO.com</h1></div>
+
+
+</header>
+    <div class="form-style-10">
+<h1>Travel Registration Form!<span>What we all want in life to travel, fall in love, and be happy.</span></h1>
+<form>
+    <div class="section"><span>1</span>First Name & Address</div>
+    <div class="inner-wrap">
+        <label>Prefix <input type="text" name="field0" required=""  id="pre" /></label>
+        <label>Your First Name <input type="text" name="field1" required="" id="f_name" /></label>
+        <label>Your Last Name <input type="text" name="field2" required="" id="l_name" /></label>
+        <label for="gender" >Gender: </label>
+        <input type="radio" id="gender" name="gender" value="Male" required>Male 
+        <input type="radio" id="gender" name="gender" value="Female" required> Female
+        <input type="radio" id="gender" name="gender" value="Other" required> Other
+        <label>Address <textarea name="field3"></textarea></label>
+        <label>Province/Territory : <input type="text" name="field4" /></label>
+        <label>City/Ville/Community :  <input type="text" name="field5" /></label>
+        <label>Postal Code :<input type="text" name="field6" /></label>
+    </div>
+
+    <div class="section"><span>2</span>Email & Phone</div>
+    <div class="inner-wrap">
+        <label>Email Address <input type="email"  id="email" name="field7" required="" /></label>
+        <span id="check_email"></span>
+        <label>Phone Number <input type="text" name="field8" id="phone_no" required="" />
+            <span id="val_phone"></span></label>
+    </div>
+    <div class="section"><span>3</span>Travel Info.</div>
+        <div class="inner-wrap">
+        <label>Destination <input type="text" name="field9" required="" id="Destination" /></label>
+  <input type="date" name="Travel date" placeholder="" >
+<select id="country" name="country" selected="from" >
+  <option value="">From</option>
+  <option value="India">India</option>
+  <option value="Canada">Canada</option>
+  <option value="USA">USA</option>
+  <option value="Australia">Australia</option>
+  <option value="Newzeland">NEWzeland</option>
+  <option value="UK">UK</option>
+  <option value="Europe">Europe</option>
+  <option value="Pakistan">Pakistan</option> 
+  <option value="Kenya">Kenya</option> 
+  <option value="Nepal">Nepal</option>
+  <option value="Malaysia">Malaysia</option>   
+</select> 
+<select id="country" name="country" selected="TO" >
+<option value="">To</option>
+ <option value="India">India</option>
+  <option value="Canada">Canada</option>
+  <option value="USA">USA</option>
+  <option value="Australia">Australia</option>
+  <option value="New zeland">New Zeland</option>
+  <option value="UK">UK</option>
+  <option value="Europe">Europe</option>
+  <option value="Pakistan">Pakistan</option> 
+  <option value="Kenya">Kenya</option> 
+  <option value="Nepal">Nepal</option>
+  <option value="Malaysia">Malaysia</option>  
+</select> 
+</div>
+    <label> Privacy Policy :  </label>
+    <p> We have developed and implemented internal policies and procedures designed to provide adequate protection of the personal information in our possession and we review these on a regular basis.</P>
+        <label> Legal Policy :  </label>
+        <p>By tolerating this you are tolerating our terms and condition.</p>
+        <label> Specific Instruction :  </label>
+        <p>Fees are subject to change.</p>
+     <input type="checkbox" name="field10" required="">You agree to our Terms and Policy.
+        <div class="button-section">
+     <input type="submit" style="margin-top: 25px;" onclick="return check_data()"/>
+    
+    </div>
+</form>
+</div>
+</body>
+</html>
